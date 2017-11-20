@@ -8,7 +8,7 @@ ans = []
 for i in l:
 	k = 0
 	for j in i:
-		k = k + (j*j)%int(km[1])
+		k += (j*j)%int(km[1])
 	k = k%int(km[1])
 	ans.append(k)
 print max(ans)
